@@ -1,0 +1,138 @@
+{
+  "uuid": "78c03cf913bd47cfb4118297a43123a0",
+  "historyId": "Create a new product with authentication",
+  "fullName": "Create a new product with authentication",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az1025-829"
+    },
+    {
+      "name": "feature",
+      "value": "Create a product"
+    },
+    {
+      "name": "tag",
+      "value": "PostProduct"
+    },
+    {
+      "name": "tag",
+      "value": "ProductFeature"
+    }
+  ],
+  "links": [],
+  "name": "Create a new product with authentication",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have the username \"admin\" and password \"admin\".",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685637624605,
+      "stop": 1685637624969
+    },
+    {
+      "name": "And  the API endpoint \"http://demostore.gatling.io/api\" to create a new product.",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685637624970,
+      "stop": 1685637624971
+    },
+    {
+      "name": "And  the following product data:.",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "227bbee4878249639f87ef6343b3b621-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1685637624975,
+      "stop": 1685637625016
+    },
+    {
+      "name": "When  I send a POST request to the API endpoint with the product data.",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685637625016,
+      "stop": 1685637625050
+    },
+    {
+      "name": "Then  the response status code to create a new product should be 200",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685637625050,
+      "stop": 1685637625216
+    },
+    {
+      "name": "And  the response body should contain the created product details.",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685637625216,
+      "stop": 1685637625219
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685637624595,
+  "stop": 1685637625221
+}
