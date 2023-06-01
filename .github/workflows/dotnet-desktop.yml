@@ -37,7 +37,7 @@ jobs:
         if: always()
         id: allure-report
         with:
-          allure_results: './TestProject3/bin/Debug/net6.0/allure-results'
+          allure_results: './Gatling-DemoStore/bin/Debug/net6.0/allure-results'
           gh_pages: gh-pages
           allure_report: allure-report
       - name: Deploy report to Github Pages
