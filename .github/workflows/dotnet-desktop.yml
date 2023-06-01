@@ -27,7 +27,7 @@ jobs:
         if: ${{ always() }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: './TestProject3/bin/Debug/net6.0/allure-results'
+          publish_dir: './Gatling-DemoStore/bin/Debug/net6.0/allure-results'
           keep_files: true
           user_name: borismm3
           user_email: borismaidana3@gmail.com
