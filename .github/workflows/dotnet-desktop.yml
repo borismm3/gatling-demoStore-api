@@ -20,7 +20,7 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --configuration Release --no-restore
-      - name: Test
+      - name: Execute Test
         run: dotnet test --no-restore --verbosity normal
       - name: "Publish test results"
         uses: peaceiris/actions-gh-pages@v3.7.3
@@ -29,8 +29,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: './TestProject3/bin/Debug/net6.0/allure-results'
           keep_files: true
-          user_name: elmer-zapata
-          user_email: elmero_7@hotmail.com
+          user_name: borismm3
+          user_email: borismaidana3@gmail.com
           publish_branch: gh_page  
       - name: Test marketplace action
         uses: simple-elf/allure-report-action@master
@@ -46,4 +46,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-report
+          PUBLISH_DIR: allure-report    
