@@ -1,0 +1,138 @@
+{
+  "uuid": "9b993aa64be54555ab480c7eb793ce94",
+  "historyId": "Update a product",
+  "fullName": "Update a product",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az627-564"
+    },
+    {
+      "name": "feature",
+      "value": "Update a product"
+    },
+    {
+      "name": "tag",
+      "value": "PutProduct"
+    },
+    {
+      "name": "tag",
+      "value": "ProductFeature"
+    }
+  ],
+  "links": [],
+  "name": "Update a product",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have the username \"admin\" and password \"admin\" to update",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685729978732,
+      "stop": 1685729978756
+    },
+    {
+      "name": "And  I have the product ID \"20\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685729978756,
+      "stop": 1685729978757
+    },
+    {
+      "name": "And  I have the following updated product details:",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "table",
+          "source": "7e744440e3604a8d98f24839938f790f-attachment.csv",
+          "type": "text/csv"
+        }
+      ],
+      "parameters": [],
+      "start": 1685729978757,
+      "stop": 1685729978759
+    },
+    {
+      "name": "When  I send a PUT request to the API endpoint \"http://demostore.gatling.io/api\" to update the product",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685729978759,
+      "stop": 1685729978788
+    },
+    {
+      "name": "Then  the response status code for updating the product should be 200",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685729978788,
+      "stop": 1685729978789
+    },
+    {
+      "name": "And  the response body should contain the updated product details",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685729978789,
+      "stop": 1685729978790
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685729978732,
+  "stop": 1685729978790
+}
